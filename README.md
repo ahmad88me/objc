@@ -62,6 +62,12 @@ An example to declar a class object called Student
 }
 @end
 ```
+The Student implementation file:
+```
+#import "Student.h"
+@implementation Student
+@end
+```
 The main file:
 ```
 //main.m
