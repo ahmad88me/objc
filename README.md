@@ -4,7 +4,10 @@
 
 ```
 @interface Foo: NSObject{
+  // instace variables
 }
+//declatations of methods
+@end
 ```
 * So `@interface` means class in Java
 * Foo is the name of the class
