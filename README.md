@@ -49,3 +49,36 @@ initializing an object (calling a contructor like method)
 [student init];// initializing the new object student
 [student initWithName:@"Alice" andAge:20]; // Apple convension is to have the methods to be readable, so the first argument is @"Alice" and the second argument value is 20 and the second parameter name is "andAge"
 ```
+
+=========
+An example to declar a class object called Student
+```
+//in Student.h
+#import <Foundation/Foundation.h>
+@interface Student : NSObject{
+@public
+  int age;
+  NSString *name;
+}
+@end
+```
+The main file:
+```
+//main.m
+#import <Foundation/Foundation.h>
+#import "Student.h"
+
+void greet(Student *s);
+
+int main(int argc, const char * argv[]){
+
+  Student *alice = [Student alloc];
+  alice->age = 20;
+  alice->name = @"Alice";
+  greet(alice);
+  return 0;
+}
+
+```
+
+
