@@ -34,9 +34,18 @@ Student student = new Student(); // Java
 
 ========
 
-In instance method the convension is to call the getters by the variable name while have the setters starts with "Set".
+In instance method the convension is to call the getters by the variable name while have the setters starts with "set".
 ```
 - (int)age; // getter method that returns an int
 - (void)setAge;(int)age; // setter method that takes an int as an argument and returns nothing (void) 
 ```
-
+setter and getter example:
+```
+[student age]; // call the getter method for the instance student to get the age 
+[student setAge:20]; // call the setter method setAge and pass the parameter 20
+```
+initializing an object (calling a contructor like method)
+```
+[student init];// initializing the new object student
+[student initWithName:@"Alice" andAge:20]; // Apple convension is to have the methods to be readable, so the first argument is @"Alice" and the second argument value is 20 and the second parameter name is "andAge"
+```
