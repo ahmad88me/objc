@@ -21,7 +21,9 @@ In the .m file:
 // definitions of methods
 @end
 ```
+
 =========
+
 * Adding `@class` to a method means static (can be called on the class level rather that instance level)
 * The function `alloc` is quivalent to malloc in c or new in Java. 
 ```
@@ -29,7 +31,9 @@ Student *student = [Student alloc]; // objective c
 Student student = new Student(); // Java
 ```
 * What in objective c called "message passing" is what in Java is called "method calling"
+
 ========
+
 In instance method the convension is to call the getters by the variable name while have the setters starts with "Set".
 ```
 - (int)age; // getter method that returns an int
