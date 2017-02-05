@@ -28,3 +28,4 @@ In the .m file:
 Student *student = [Student alloc]; // objective c
 Student student = new Student(); // Java
 ```
+* What in objective c called "message passing" is what in Java is called "method calling"
